@@ -4,7 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
 class ListPage extends StatefulWidget {
-  const ListPage({
+
+   const ListPage({
     Key? key,
   }) : super(key: key);
 
@@ -64,6 +65,7 @@ class _ListPageState extends State<ListPage> {
     };
     //Submit data to the server
     const url = "https://api.nstack.in/v1/todos";
+
     final uri = Uri.parse(url);
     final response = await http.post(
         uri,

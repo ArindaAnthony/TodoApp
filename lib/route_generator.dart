@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todo_app/EditPage.dart';
 import 'package:todo_app/ListPage.dart';
 import 'package:todo_app/ToDoPage.dart';
 import 'package:todo_app/main.dart';
@@ -10,6 +11,8 @@ class RouteGenerator{
         return MaterialPageRoute(builder: (_)=>const ToDoPage());
       case'/second':
         return MaterialPageRoute(builder: (_)=>const ListPage());
+      case'/third':
+        return MaterialPageRoute(builder: (_)=>const EditPage());
       default:
         return errorPage();
     }
